@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jPU-Iv-n0P">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8092"/>
+    </dependencies>
+    <scenes>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="XkS-y5-khE"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="XkS-y5-khE" id="49B-RR-99y"/>
+                        <segue destination="gdX-wl-uQE" kind="relationship" relationship="dynamicNotificationInterface" id="fKh-qV-3T2"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="235" y="1001"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="KIl-fV-djm">
+            <objects>
+                <controller id="gdX-wl-uQE" customClass="NotificationController" customModule="ServerMonitorWatch" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="0.0" alignment="left" layout="vertical" spacing="4" id="DnZ-4W-DZl">
+                            <items>
+                                <label alignment="left" text="ServerName" id="khg-hh-gvO">
+                                    <fontDescription key="font" type="system" pointSize="13"/>
+                                </label>
+                                <group width="1" alignment="left" id="BRj-rg-Erj">
+                                    <items>
+                                        <label alignment="left" text="cpu:" id="s8U-is-p34">
+                                            <fontDescription key="font" type="system" pointSize="11"/>
+                                        </label>
+                                        <label alignment="left" text="100%" id="Joc-SF-idN">
+                                            <fontDescription key="font" type="system" pointSize="11"/>
+                                        </label>
+                                        <label alignment="right" text="mem:" id="9jA-1C-L2z">
+                                            <fontDescription key="font" type="system" pointSize="11"/>
+                                        </label>
+                                        <label alignment="right" text="100%" id="Yur-It-8FC">
+                                            <fontDescription key="font" type="system" pointSize="11"/>
+                                        </label>
+                                    </items>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                </group>
+                                <group width="1" alignment="left" id="fIK-LS-KMK">
+                                    <items>
+                                        <label width="40" alignment="left" text="extra1" id="eJG-nJ-8Bc">
+                                            <fontDescription key="font" type="system" pointSize="11"/>
+                                        </label>
+                                        <imageView width="10" height="9" alignment="left" verticalAlignment="center" image="green" id="uX0-YH-L6x"/>
+                                        <label width="40" alignment="right" text="extra2" id="Mes-8d-Djo">
+                                            <fontDescription key="font" type="system" pointSize="11"/>
+                                        </label>
+                                        <imageView width="10" height="9" alignment="right" verticalAlignment="center" image="green" id="CLO-oU-5RQ"/>
+                                    </items>
+                                    <edgeInsets key="margins" left="5" right="5" top="0.0" bottom="0.0"/>
+                                </group>
+                                <group width="1" alignment="left" id="YTo-Jx-isl">
+                                    <items>
+                                        <label width="40" alignment="left" text="extra3" id="iGo-ZC-wDM">
+                                            <fontDescription key="font" type="system" pointSize="11"/>
+                                        </label>
+                                        <imageView width="10" height="9" alignment="left" verticalAlignment="center" image="green" id="ubN-DL-aCs"/>
+                                        <label width="40" alignment="right" text="extra4" id="Ga0-hv-2Hz">
+                                            <fontDescription key="font" type="system" pointSize="11"/>
+                                        </label>
+                                        <imageView width="10" height="9" alignment="right" verticalAlignment="center" image="green" id="3kg-Xy-oNd"/>
+                                    </items>
+                                    <edgeInsets key="margins" left="5" right="5" top="0.0" bottom="0.0"/>
+                                </group>
+                            </items>
+                            <edgeInsets key="margins" left="5" right="5" top="5" bottom="5"/>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="553" y="1001"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="llx-ZY-MQ1">
+            <objects>
+                <controller id="jPU-Iv-n0P" customClass="InterfaceController" customModule="ServerMonitorWatch" customModuleProvider="target">
+                    <items>
+                        <group width="136" height="36" alignment="left" id="lxf-d8-gNj">
+                            <items>
+                                <imageView width="37" height="50" alignment="left" image="rounded" id="x21-p0-BQD"/>
+                                <label width="85" height="50" alignment="left" text="Servers" textAlignment="center" id="RhJ-Vt-MYK"/>
+                            </items>
+                            <edgeInsets key="margins" left="4" right="4" top="0.0" bottom="0.0"/>
+                        </group>
+                        <table alignment="left" id="4Bg-4j-6F3">
+                            <items>
+                                <tableRow identifier="ServerRowController" selectable="NO" id="Bd4-eW-TcN" customClass="ServerRow" customModule="ServerMonitorWatch_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" spacing="4" id="V6z-xb-yEa">
+                                        <items>
+                                            <label alignment="left" text="ServerName" id="emc-3C-nrI">
+                                                <fontDescription key="font" type="system" pointSize="13"/>
+                                            </label>
+                                            <group width="1" alignment="left" id="ehV-gb-rRZ">
+                                                <items>
+                                                    <label alignment="left" text="cpu:" id="CaQ-vR-G2h">
+                                                        <fontDescription key="font" type="system" pointSize="11"/>
+                                                    </label>
+                                                    <label alignment="left" text="100%" id="GVb-Uw-amy">
+                                                        <fontDescription key="font" type="system" pointSize="11"/>
+                                                    </label>
+                                                    <label alignment="right" text="mem:" id="mXu-Zf-gNj">
+                                                        <fontDescription key="font" type="system" pointSize="11"/>
+                                                    </label>
+                                                    <label alignment="right" text="100%" id="1LF-LG-BUA">
+                                                        <fontDescription key="font" type="system" pointSize="11"/>
+                                                    </label>
+                                                </items>
+                                                <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                            </group>
+                                            <group width="1" alignment="left" id="0kP-EB-Yjk">
+                                                <items>
+                                                    <label width="40" alignment="left" text="extra1" id="ENa-nT-oce">
+                                                        <fontDescription key="font" type="system" pointSize="11"/>
+                                                    </label>
+                                                    <imageView width="10" height="9" alignment="left" verticalAlignment="center" image="green" id="jc5-nz-Y9B"/>
+                                                    <label width="40" alignment="right" text="extra2" id="G20-Nf-VWC">
+                                                        <fontDescription key="font" type="system" pointSize="11"/>
+                                                    </label>
+                                                    <imageView width="10" height="9" alignment="right" verticalAlignment="center" image="green" id="L0D-IO-OLz"/>
+                                                </items>
+                                                <edgeInsets key="margins" left="5" right="5" top="0.0" bottom="0.0"/>
+                                            </group>
+                                            <group width="1" alignment="left" id="tt3-nG-DJ8">
+                                                <items>
+                                                    <label width="40" alignment="left" text="extra3" id="miX-ek-KQU">
+                                                        <fontDescription key="font" type="system" pointSize="11"/>
+                                                    </label>
+                                                    <imageView width="10" height="9" alignment="left" verticalAlignment="center" image="green" id="mmM-GD-rbP"/>
+                                                    <label width="40" alignment="right" text="extra4" id="Gsk-Ud-47w">
+                                                        <fontDescription key="font" type="system" pointSize="11"/>
+                                                    </label>
+                                                    <imageView width="10" height="9" alignment="right" verticalAlignment="center" image="green" id="PG5-CX-jYC"/>
+                                                </items>
+                                                <edgeInsets key="margins" left="5" right="5" top="0.0" bottom="0.0"/>
+                                            </group>
+                                        </items>
+                                        <edgeInsets key="margins" left="5" right="5" top="5" bottom="5"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="ServerName" destination="emc-3C-nrI" id="t6t-md-Wyf"/>
+                                        <outlet property="cpuLbl" destination="GVb-Uw-amy" id="FVt-qq-s72"/>
+                                        <outlet property="extraImageView1" destination="jc5-nz-Y9B" id="c7C-Bf-VLW"/>
+                                        <outlet property="extraImageView2" destination="L0D-IO-OLz" id="2fO-2e-aCN"/>
+                                        <outlet property="extraImageView3" destination="mmM-GD-rbP" id="sBg-p9-dDN"/>
+                                        <outlet property="extraImageView4" destination="PG5-CX-jYC" id="xCU-4g-yPD"/>
+                                        <outlet property="extraLbl1" destination="ENa-nT-oce" id="k3u-70-9RO"/>
+                                        <outlet property="extraLbl2" destination="G20-Nf-VWC" id="YXG-aY-CNL"/>
+                                        <outlet property="extraLbl3" destination="miX-ek-KQU" id="JZT-wj-hAr"/>
+                                        <outlet property="extraLbl4" destination="Gsk-Ud-47w" id="yqI-lI-oJR"/>
+                                        <outlet property="memLbl" destination="1LF-LG-BUA" id="r6z-Ym-wGE"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <label alignment="center" text="Loading..." textAlignment="center" id="VlW-6Q-Te6">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                        </label>
+                        <button width="1" alignment="left" title="Refresh" id="wU9-g3-KK2">
+                            <connections>
+                                <action selector="refreshTable" destination="jPU-Iv-n0P" id="i3s-em-4E9"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="loadingLbl" destination="VlW-6Q-Te6" id="xKI-23-CFM"/>
+                        <outlet property="refreshButton" destination="wU9-g3-KK2" id="Mu2-ax-aMh"/>
+                        <outlet property="serverTable" destination="4Bg-4j-6F3" id="OcT-69-reA"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="223" y="399.5"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="f3X-Pr-Tzz">
+            <objects>
+                <glanceController spacing="0.0" id="zgE-PF-VfV" customClass="GlanceInterfaceController" customModule="ServerMonitorWatch_Extension">
+                    <items>
+                        <group alignment="left" id="FfX-bO-ZHV">
+                            <items>
+                                <imageView width="37" height="37" alignment="left" verticalAlignment="center" image="rounded" id="1IG-mc-zXF"/>
+                                <label width="85" height="50" alignment="left" verticalAlignment="center" text="Status" textAlignment="center" id="Cv0-BI-zND">
+                                    <fontDescription key="font" type="system" pointSize="16"/>
+                                </label>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                        </group>
+                        <group alignment="left" id="MyB-sr-DsP">
+                            <items>
+                                <imageView width="73" height="193" alignment="center" verticalAlignment="center" image="server-ok" id="5Oi-Zk-M4s"/>
+                            </items>
+                            <edgeInsets key="margins" left="10" right="10" top="5" bottom="5"/>
+                        </group>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                    <connections>
+                        <outlet property="serverStatus" destination="5Oi-Zk-M4s" id="hHj-ye-28g"/>
+                    </connections>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="223" y="711"/>
+        </scene>
+    </scenes>
+</document>

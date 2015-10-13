@@ -1,0 +1,12 @@
+version: "Apple Swift version 2.0 (swiftlang-700.0.59 clang-700.0.72)"
+options: "37ca84d8f40be951e2bbf8db7fe5939d"
+build_time: [497985258, 948627000]
+inputs: 
+	"/Volumes/STORAGE/Xcode/ServerMonitor/ServerMonitor/ServerMonitorWatch Extension/ExtensionDelegate.swift": [9223372036854775807, 0]
+	"/Volumes/STORAGE/Xcode/ServerMonitor/ServerMonitor/ServerMonitorWatch Extension/ServerLoader.swift": [9223372036854775807, 0]
+	"/Volumes/STORAGE/Xcode/ServerMonitor/ServerMonitor/ServerMonitorWatch Extension/InterfaceController.swift": [9223372036854775807, 0]
+	"/Volumes/STORAGE/Xcode/ServerMonitor/ServerMonitor/ServerMonitorWatch Extension/GlanceController.swift": [9223372036854775807, 0]
+	"/Volumes/STORAGE/Xcode/ServerMonitor/ServerMonitor/ServerMonitorWatch Extension/Server.swift": [9223372036854775807, 0]
+	"/Volumes/STORAGE/Xcode/ServerMonitor/ServerMonitor/ServerMonitorWatch Extension/ServerRow.swift": [9223372036854775807, 0]
+	"/Volumes/STORAGE/Xcode/ServerMonitor/ServerMonitor/ServerMonitorWatch Extension/NotificationController.swift": [9223372036854775807, 0]
+	"/Volumes/STORAGE/Xcode/ServerMonitor/ServerMonitor/ServerMonitorWatch Extension/ComplicationController.swift": [9223372036854775807, 0]

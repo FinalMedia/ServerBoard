@@ -1,0 +1,1 @@
+/Volumes/STORAGE/Xcode/ServerMonitor/ServerMonitor/DerivedData/ServerMonitor/Build/Intermediates/ArchiveIntermediates/ServerMonitor/InstallationBuildProductsLocation/Applications/ServerMonitor.app

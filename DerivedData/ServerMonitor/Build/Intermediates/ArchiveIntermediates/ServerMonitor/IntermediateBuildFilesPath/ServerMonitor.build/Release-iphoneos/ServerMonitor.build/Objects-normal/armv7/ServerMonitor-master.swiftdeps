@@ -1,0 +1,10 @@
+version: "Apple Swift version 2.0 (swiftlang-700.0.59 clang-700.0.72)"
+options: "2d61e896f57352f1c000537b42de2535"
+build_time: [497985300, 711193000]
+inputs: 
+	"/Volumes/STORAGE/Xcode/ServerMonitor/ServerMonitor/ServerMonitor/Classes/ServersTableViewCell.swift": [9223372036854775807, 0]
+	"/Volumes/STORAGE/Xcode/ServerMonitor/ServerMonitor/ServerMonitor/ViewControllers/ServerTableViewController.swift": [9223372036854775807, 0]
+	"/Volumes/STORAGE/Xcode/ServerMonitor/ServerMonitor/ServerMonitor/Classes/ServerLoader.swift": [9223372036854775807, 0]
+	"/Volumes/STORAGE/Xcode/ServerMonitor/ServerMonitor/ServerMonitor/Classes/Server.swift": [9223372036854775807, 0]
+	"/Volumes/STORAGE/Xcode/ServerMonitor/ServerMonitor/ServerMonitor/ViewControllers/BarChartViewController.swift": [9223372036854775807, 0]
+	"/Volumes/STORAGE/Xcode/ServerMonitor/ServerMonitor/ServerMonitor/AppDelegate.swift": [9223372036854775807, 0]
