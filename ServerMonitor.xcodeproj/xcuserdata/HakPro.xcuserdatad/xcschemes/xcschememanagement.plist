@@ -4,15 +4,40 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Complication - ServerMonitorWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>Glance - ServerMonitorWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>Notification - ServerMonitorWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>ServerMonitor.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>ServerMonitorWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>A5C5E8661BCC140B0010CCA7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A5C5E8AB1BCC17BB0010CCA7</key>
 		<dict>
 			<key>primary</key>
 			<true/>

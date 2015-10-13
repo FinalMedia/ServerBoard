@@ -8,24 +8,150 @@
 
 /* Begin PBXBuildFile section */
 		A5C5E86B1BCC140B0010CCA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C5E86A1BCC140B0010CCA7 /* AppDelegate.swift */; };
-		A5C5E86D1BCC140B0010CCA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C5E86C1BCC140B0010CCA7 /* ViewController.swift */; };
 		A5C5E8701BCC140B0010CCA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C5E86E1BCC140B0010CCA7 /* Main.storyboard */; };
 		A5C5E8721BCC140B0010CCA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5C5E8711BCC140B0010CCA7 /* Assets.xcassets */; };
 		A5C5E8751BCC140B0010CCA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C5E8731BCC140B0010CCA7 /* LaunchScreen.storyboard */; };
+		A5C5E8861BCC14340010CCA7 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C5E8811BCC14340010CCA7 /* Server.swift */; settings = {ASSET_TAGS = (); }; };
+		A5C5E8871BCC14340010CCA7 /* ServerLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C5E8821BCC14340010CCA7 /* ServerLoader.swift */; settings = {ASSET_TAGS = (); }; };
+		A5C5E8881BCC14340010CCA7 /* ServersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C5E8831BCC14340010CCA7 /* ServersTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		A5C5E8911BCC14DC0010CCA7 /* ServerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C5E88F1BCC14DC0010CCA7 /* ServerTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		A5C5E8941BCC14F30010CCA7 /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C5E8931BCC14F30010CCA7 /* BarChartViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		A5C5E89F1BCC163D0010CCA7 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C5E89C1BCC16310010CCA7 /* Charts.framework */; };
+		A5C5E8A01BCC163D0010CCA7 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A5C5E89C1BCC16310010CCA7 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A5C5E8A91BCC17380010CCA7 /* JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C5E8A81BCC17380010CCA7 /* JSON.m */; settings = {ASSET_TAGS = (); }; };
+		A5C5E8B01BCC17BB0010CCA7 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C5E8AE1BCC17BB0010CCA7 /* Interface.storyboard */; };
+		A5C5E8B21BCC17BB0010CCA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5C5E8B11BCC17BB0010CCA7 /* Assets.xcassets */; };
+		A5C5E8B91BCC17BC0010CCA7 /* ServerMonitorWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A5C5E8B81BCC17BC0010CCA7 /* ServerMonitorWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A5C5E8C01BCC17BC0010CCA7 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C5E8BF1BCC17BC0010CCA7 /* InterfaceController.swift */; };
+		A5C5E8C21BCC17BC0010CCA7 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C5E8C11BCC17BC0010CCA7 /* ExtensionDelegate.swift */; };
+		A5C5E8C41BCC17BC0010CCA7 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C5E8C31BCC17BC0010CCA7 /* NotificationController.swift */; };
+		A5C5E8C61BCC17BC0010CCA7 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C5E8C51BCC17BC0010CCA7 /* GlanceController.swift */; };
+		A5C5E8C81BCC17BC0010CCA7 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C5E8C71BCC17BC0010CCA7 /* ComplicationController.swift */; };
+		A5C5E8CA1BCC17BC0010CCA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5C5E8C91BCC17BC0010CCA7 /* Assets.xcassets */; };
+		A5C5E8CE1BCC17BC0010CCA7 /* ServerMonitorWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A5C5E8AC1BCC17BB0010CCA7 /* ServerMonitorWatch.app */; };
+		A5C5E8DA1BCC18BD0010CCA7 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C5E8D71BCC18BD0010CCA7 /* Server.swift */; settings = {ASSET_TAGS = (); }; };
+		A5C5E8DB1BCC18BD0010CCA7 /* ServerLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C5E8D81BCC18BD0010CCA7 /* ServerLoader.swift */; settings = {ASSET_TAGS = (); }; };
+		A5C5E8DC1BCC18BD0010CCA7 /* ServerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C5E8D91BCC18BD0010CCA7 /* ServerRow.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5C5E89B1BCC16310010CCA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5C5E8961BCC16310010CCA7 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5BA8EC401A9D14DC00CE82E1;
+			remoteInfo = Charts;
+		};
+		A5C5E89D1BCC16310010CCA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5C5E8961BCC16310010CCA7 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A52C5C371BAC5CA400594CDD;
+			remoteInfo = ChartsTV;
+		};
+		A5C5E8A11BCC163D0010CCA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5C5E8961BCC16310010CCA7 /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BA8EC3F1A9D14DC00CE82E1;
+			remoteInfo = Charts;
+		};
+		A5C5E8BA1BCC17BC0010CCA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5C5E85F1BCC140B0010CCA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5C5E8B71BCC17BC0010CCA7;
+			remoteInfo = "ServerMonitorWatch Extension";
+		};
+		A5C5E8CC1BCC17BC0010CCA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5C5E85F1BCC140B0010CCA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5C5E8AB1BCC17BB0010CCA7;
+			remoteInfo = ServerMonitorWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A5C5E8A31BCC163D0010CCA7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A5C5E8A01BCC163D0010CCA7 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C5E8D21BCC17BC0010CCA7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A5C5E8B91BCC17BC0010CCA7 /* ServerMonitorWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C5E8D61BCC17BC0010CCA7 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A5C5E8CE1BCC17BC0010CCA7 /* ServerMonitorWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A5C5E8671BCC140B0010CCA7 /* ServerMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ServerMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C5E86A1BCC140B0010CCA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A5C5E86C1BCC140B0010CCA7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A5C5E86F1BCC140B0010CCA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5C5E8711BCC140B0010CCA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5C5E8741BCC140B0010CCA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5C5E8761BCC140B0010CCA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5C5E8811BCC14340010CCA7 /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		A5C5E8821BCC14340010CCA7 /* ServerLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerLoader.swift; sourceTree = "<group>"; };
+		A5C5E8831BCC14340010CCA7 /* ServersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServersTableViewCell.swift; sourceTree = "<group>"; };
+		A5C5E88F1BCC14DC0010CCA7 /* ServerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServerTableViewController.swift; path = ViewControllers/ServerTableViewController.swift; sourceTree = "<group>"; };
+		A5C5E8931BCC14F30010CCA7 /* BarChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BarChartViewController.swift; path = ViewControllers/BarChartViewController.swift; sourceTree = "<group>"; };
+		A5C5E8961BCC16310010CCA7 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../ios-charts-master/Charts/Charts.xcodeproj"; sourceTree = "<group>"; };
+		A5C5E8A61BCC17380010CCA7 /* ServerMonitor-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ServerMonitor-Bridging-Header.h"; sourceTree = "<group>"; };
+		A5C5E8A71BCC17380010CCA7 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSON.h; path = Classes/JSON.h; sourceTree = "<group>"; };
+		A5C5E8A81BCC17380010CCA7 /* JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSON.m; path = Classes/JSON.m; sourceTree = "<group>"; };
+		A5C5E8AC1BCC17BB0010CCA7 /* ServerMonitorWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ServerMonitorWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5C5E8AF1BCC17BB0010CCA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A5C5E8B11BCC17BB0010CCA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5C5E8B31BCC17BB0010CCA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5C5E8B81BCC17BC0010CCA7 /* ServerMonitorWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ServerMonitorWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5C5E8BE1BCC17BC0010CCA7 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		A5C5E8BF1BCC17BC0010CCA7 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A5C5E8C11BCC17BC0010CCA7 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		A5C5E8C31BCC17BC0010CCA7 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		A5C5E8C51BCC17BC0010CCA7 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		A5C5E8C71BCC17BC0010CCA7 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		A5C5E8C91BCC17BC0010CCA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5C5E8CB1BCC17BC0010CCA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5C5E8D71BCC18BD0010CCA7 /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		A5C5E8D81BCC18BD0010CCA7 /* ServerLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerLoader.swift; sourceTree = "<group>"; };
+		A5C5E8D91BCC18BD0010CCA7 /* ServerRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A5C5E8641BCC140B0010CCA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5C5E89F1BCC163D0010CCA7 /* Charts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C5E8B51BCC17BC0010CCA7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +165,8 @@
 			isa = PBXGroup;
 			children = (
 				A5C5E8691BCC140B0010CCA7 /* ServerMonitor */,
+				A5C5E8AD1BCC17BB0010CCA7 /* ServerMonitorWatch */,
+				A5C5E8BC1BCC17BC0010CCA7 /* ServerMonitorWatch Extension */,
 				A5C5E8681BCC140B0010CCA7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +175,8 @@
 			isa = PBXGroup;
 			children = (
 				A5C5E8671BCC140B0010CCA7 /* ServerMonitor.app */,
+				A5C5E8AC1BCC17BB0010CCA7 /* ServerMonitorWatch.app */,
+				A5C5E8B81BCC17BC0010CCA7 /* ServerMonitorWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,14 +184,99 @@
 		A5C5E8691BCC140B0010CCA7 /* ServerMonitor */ = {
 			isa = PBXGroup;
 			children = (
+				A5C5E8951BCC15FD0010CCA7 /* Plugins */,
+				A5C5E88C1BCC14660010CCA7 /* ViewControllers */,
+				A5C5E88B1BCC14500010CCA7 /* Objective C Classes */,
+				A5C5E87E1BCC14340010CCA7 /* Classes */,
 				A5C5E86A1BCC140B0010CCA7 /* AppDelegate.swift */,
-				A5C5E86C1BCC140B0010CCA7 /* ViewController.swift */,
 				A5C5E86E1BCC140B0010CCA7 /* Main.storyboard */,
 				A5C5E8711BCC140B0010CCA7 /* Assets.xcassets */,
 				A5C5E8731BCC140B0010CCA7 /* LaunchScreen.storyboard */,
 				A5C5E8761BCC140B0010CCA7 /* Info.plist */,
 			);
 			path = ServerMonitor;
+			sourceTree = "<group>";
+		};
+		A5C5E87E1BCC14340010CCA7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A5C5E8811BCC14340010CCA7 /* Server.swift */,
+				A5C5E8821BCC14340010CCA7 /* ServerLoader.swift */,
+				A5C5E8831BCC14340010CCA7 /* ServersTableViewCell.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A5C5E88B1BCC14500010CCA7 /* Objective C Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A5C5E8A71BCC17380010CCA7 /* JSON.h */,
+				A5C5E8A81BCC17380010CCA7 /* JSON.m */,
+				A5C5E8A61BCC17380010CCA7 /* ServerMonitor-Bridging-Header.h */,
+			);
+			name = "Objective C Classes";
+			sourceTree = "<group>";
+		};
+		A5C5E88C1BCC14660010CCA7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A5C5E88F1BCC14DC0010CCA7 /* ServerTableViewController.swift */,
+				A5C5E8931BCC14F30010CCA7 /* BarChartViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A5C5E8951BCC15FD0010CCA7 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				A5C5E8961BCC16310010CCA7 /* Charts.xcodeproj */,
+			);
+			name = Plugins;
+			sourceTree = "<group>";
+		};
+		A5C5E8971BCC16310010CCA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5C5E89C1BCC16310010CCA7 /* Charts.framework */,
+				A5C5E89E1BCC16310010CCA7 /* ChartsTV.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5C5E8AD1BCC17BB0010CCA7 /* ServerMonitorWatch */ = {
+			isa = PBXGroup;
+			children = (
+				A5C5E8AE1BCC17BB0010CCA7 /* Interface.storyboard */,
+				A5C5E8B11BCC17BB0010CCA7 /* Assets.xcassets */,
+				A5C5E8B31BCC17BB0010CCA7 /* Info.plist */,
+			);
+			path = ServerMonitorWatch;
+			sourceTree = "<group>";
+		};
+		A5C5E8BC1BCC17BC0010CCA7 /* ServerMonitorWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A5C5E8D71BCC18BD0010CCA7 /* Server.swift */,
+				A5C5E8D81BCC18BD0010CCA7 /* ServerLoader.swift */,
+				A5C5E8D91BCC18BD0010CCA7 /* ServerRow.swift */,
+				A5C5E8BF1BCC17BC0010CCA7 /* InterfaceController.swift */,
+				A5C5E8C11BCC17BC0010CCA7 /* ExtensionDelegate.swift */,
+				A5C5E8C31BCC17BC0010CCA7 /* NotificationController.swift */,
+				A5C5E8C51BCC17BC0010CCA7 /* GlanceController.swift */,
+				A5C5E8C71BCC17BC0010CCA7 /* ComplicationController.swift */,
+				A5C5E8C91BCC17BC0010CCA7 /* Assets.xcassets */,
+				A5C5E8CB1BCC17BC0010CCA7 /* Info.plist */,
+				A5C5E8BD1BCC17BC0010CCA7 /* Supporting Files */,
+			);
+			path = "ServerMonitorWatch Extension";
+			sourceTree = "<group>";
+		};
+		A5C5E8BD1BCC17BC0010CCA7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5C5E8BE1BCC17BC0010CCA7 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +289,53 @@
 				A5C5E8631BCC140B0010CCA7 /* Sources */,
 				A5C5E8641BCC140B0010CCA7 /* Frameworks */,
 				A5C5E8651BCC140B0010CCA7 /* Resources */,
+				A5C5E8A31BCC163D0010CCA7 /* Embed Frameworks */,
+				A5C5E8D61BCC17BC0010CCA7 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A5C5E8A21BCC163D0010CCA7 /* PBXTargetDependency */,
+				A5C5E8CD1BCC17BC0010CCA7 /* PBXTargetDependency */,
 			);
 			name = ServerMonitor;
 			productName = ServerMonitor;
 			productReference = A5C5E8671BCC140B0010CCA7 /* ServerMonitor.app */;
 			productType = "com.apple.product-type.application";
+		};
+		A5C5E8AB1BCC17BB0010CCA7 /* ServerMonitorWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5C5E8D31BCC17BC0010CCA7 /* Build configuration list for PBXNativeTarget "ServerMonitorWatch" */;
+			buildPhases = (
+				A5C5E8AA1BCC17BB0010CCA7 /* Resources */,
+				A5C5E8D21BCC17BC0010CCA7 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5C5E8BB1BCC17BC0010CCA7 /* PBXTargetDependency */,
+			);
+			name = ServerMonitorWatch;
+			productName = ServerMonitorWatch;
+			productReference = A5C5E8AC1BCC17BB0010CCA7 /* ServerMonitorWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A5C5E8B71BCC17BC0010CCA7 /* ServerMonitorWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5C5E8CF1BCC17BC0010CCA7 /* Build configuration list for PBXNativeTarget "ServerMonitorWatch Extension" */;
+			buildPhases = (
+				A5C5E8B41BCC17BC0010CCA7 /* Sources */,
+				A5C5E8B51BCC17BC0010CCA7 /* Frameworks */,
+				A5C5E8B61BCC17BC0010CCA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ServerMonitorWatch Extension";
+			productName = "ServerMonitorWatch Extension";
+			productReference = A5C5E8B81BCC17BC0010CCA7 /* ServerMonitorWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -90,10 +343,17 @@
 		A5C5E85F1BCC140B0010CCA7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Addcomm Direct B.V.";
 				TargetAttributes = {
 					A5C5E8661BCC140B0010CCA7 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					A5C5E8AB1BCC17BB0010CCA7 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					A5C5E8B71BCC17BC0010CCA7 = {
 						CreatedOnToolsVersion = 7.0.1;
 					};
 				};
@@ -109,12 +369,37 @@
 			mainGroup = A5C5E85E1BCC140B0010CCA7;
 			productRefGroup = A5C5E8681BCC140B0010CCA7 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A5C5E8971BCC16310010CCA7 /* Products */;
+					ProjectRef = A5C5E8961BCC16310010CCA7 /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A5C5E8661BCC140B0010CCA7 /* ServerMonitor */,
+				A5C5E8AB1BCC17BB0010CCA7 /* ServerMonitorWatch */,
+				A5C5E8B71BCC17BC0010CCA7 /* ServerMonitorWatch Extension */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A5C5E89C1BCC16310010CCA7 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = A5C5E89B1BCC16310010CCA7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A5C5E89E1BCC16310010CCA7 /* ChartsTV.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ChartsTV.framework;
+			remoteRef = A5C5E89D1BCC16310010CCA7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A5C5E8651BCC140B0010CCA7 /* Resources */ = {
@@ -127,6 +412,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A5C5E8AA1BCC17BB0010CCA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5C5E8B21BCC17BB0010CCA7 /* Assets.xcassets in Resources */,
+				A5C5E8B01BCC17BB0010CCA7 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C5E8B61BCC17BC0010CCA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5C5E8CA1BCC17BC0010CCA7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -134,12 +436,50 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5C5E86D1BCC140B0010CCA7 /* ViewController.swift in Sources */,
+				A5C5E8911BCC14DC0010CCA7 /* ServerTableViewController.swift in Sources */,
+				A5C5E8941BCC14F30010CCA7 /* BarChartViewController.swift in Sources */,
+				A5C5E8861BCC14340010CCA7 /* Server.swift in Sources */,
+				A5C5E8A91BCC17380010CCA7 /* JSON.m in Sources */,
+				A5C5E8871BCC14340010CCA7 /* ServerLoader.swift in Sources */,
 				A5C5E86B1BCC140B0010CCA7 /* AppDelegate.swift in Sources */,
+				A5C5E8881BCC14340010CCA7 /* ServersTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C5E8B41BCC17BC0010CCA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5C5E8C41BCC17BC0010CCA7 /* NotificationController.swift in Sources */,
+				A5C5E8DC1BCC18BD0010CCA7 /* ServerRow.swift in Sources */,
+				A5C5E8C21BCC17BC0010CCA7 /* ExtensionDelegate.swift in Sources */,
+				A5C5E8C81BCC17BC0010CCA7 /* ComplicationController.swift in Sources */,
+				A5C5E8C01BCC17BC0010CCA7 /* InterfaceController.swift in Sources */,
+				A5C5E8DA1BCC18BD0010CCA7 /* Server.swift in Sources */,
+				A5C5E8DB1BCC18BD0010CCA7 /* ServerLoader.swift in Sources */,
+				A5C5E8C61BCC17BC0010CCA7 /* GlanceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5C5E8A21BCC163D0010CCA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = A5C5E8A11BCC163D0010CCA7 /* PBXContainerItemProxy */;
+		};
+		A5C5E8BB1BCC17BC0010CCA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5C5E8B71BCC17BC0010CCA7 /* ServerMonitorWatch Extension */;
+			targetProxy = A5C5E8BA1BCC17BC0010CCA7 /* PBXContainerItemProxy */;
+		};
+		A5C5E8CD1BCC17BC0010CCA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5C5E8AB1BCC17BB0010CCA7 /* ServerMonitorWatch */;
+			targetProxy = A5C5E8CC1BCC17BC0010CCA7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A5C5E86E1BCC140B0010CCA7 /* Main.storyboard */ = {
@@ -156,6 +496,14 @@
 				A5C5E8741BCC140B0010CCA7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A5C5E8AE1BCC17BB0010CCA7 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5C5E8AF1BCC17BB0010CCA7 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -246,10 +594,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = ServerMonitor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nl.addcomm.ServerMonitor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ServerMonitor/ServerMonitor-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -257,10 +609,75 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = ServerMonitor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nl.addcomm.ServerMonitor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ServerMonitor/ServerMonitor-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		A5C5E8D01BCC17BC0010CCA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "ServerMonitorWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.addcomm.ServerMonitor.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		A5C5E8D11BCC17BC0010CCA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "ServerMonitorWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.addcomm.ServerMonitor.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		A5C5E8D41BCC17BC0010CCA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = ServerMonitorWatch_Extension;
+				INFOPLIST_FILE = ServerMonitorWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.addcomm.ServerMonitor.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		A5C5E8D51BCC17BC0010CCA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = ServerMonitorWatch_Extension;
+				INFOPLIST_FILE = ServerMonitorWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.addcomm.ServerMonitor.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -283,6 +700,25 @@
 				A5C5E87B1BCC140B0010CCA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5C5E8CF1BCC17BC0010CCA7 /* Build configuration list for PBXNativeTarget "ServerMonitorWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5C5E8D01BCC17BC0010CCA7 /* Debug */,
+				A5C5E8D11BCC17BC0010CCA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5C5E8D31BCC17BC0010CCA7 /* Build configuration list for PBXNativeTarget "ServerMonitorWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5C5E8D41BCC17BC0010CCA7 /* Debug */,
+				A5C5E8D51BCC17BC0010CCA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
