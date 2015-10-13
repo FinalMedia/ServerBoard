@@ -198,7 +198,7 @@
                         </group>
                         <group alignment="left" id="MyB-sr-DsP">
                             <items>
-                                <imageView width="73" height="193" alignment="center" verticalAlignment="center" image="server-ok" id="5Oi-Zk-M4s"/>
+                                <imageView width="72" height="92" alignment="center" verticalAlignment="center" image="server-ok" id="5Oi-Zk-M4s"/>
                             </items>
                             <edgeInsets key="margins" left="10" right="10" top="5" bottom="5"/>
                         </group>
