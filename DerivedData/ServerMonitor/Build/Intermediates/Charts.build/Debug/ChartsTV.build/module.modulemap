@@ -1,6 +1,0 @@
-framework module ChartsTV {
-  umbrella header "ChartsTV.h"
-
-  export *
-  module * { export * }
-}
